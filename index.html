@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- hover css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Css -->
+
+    <!-- script -->
+    <script src="javascript/script.js" defer></script>
+    <!-- script -->
+
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="mainBox container">
+      <!-- Card 1 -->
+      <div class="answer animate__animated animate__fadeInLeft" id="answer1">
+        <header>
+          <h2>
+            Wanna know to save up to $5000 a year using credit cards and a
+            mobile app?
+          </h2>
+        </header>
+
+        <div class="center">
+          <p>
+            Please answer a few simple questions to check eligibility. It will
+            take about 2 minutes of your time at max.
+          </p>
+        </div>
+
+        <footer>
+          <button class="button">Yes</button>
+          <button class="button">No</button>
+        </footer>
+      </div>
+      <!-- Card 1 -->
+
+      <!-- Card 2 -->
+      <div class="answer d-none" id="answer2">
+        <header class="state">
+          <label>
+            Please select your state:
+
+            <select id="state">
+              <option value="">Alabama, AL</option>
+              <option value="AK">Alaska, AK</option>
+              <option value="">Arizona, AZ</option>
+              <option value="AR">Arkansas, AR</option>
+              <option value="">California, CA</option>
+              <option value="CO">Colorado, CO</option>
+              <option value="">Connecticut, CT</option>
+              <option value="">Delaware, DE</option>
+              <option value="DC">District Of Columbia, DC</option>
+              <option value="FL">Florida, FL</option>
+              <option value="">Georgia, GA</option>
+              <option value="HI">Hawaii, HI</option>
+              <option value="">Idaho, ID</option>
+              <option value="IL">Illinois, IL</option>
+              <option value="">Indiana, IN</option>
+              <option value="IA">Iowa, IA</option>
+              <option value="KS">Kansas, KS</option>
+              <option value="KY">Kentucky, KY</option>
+              <option value="">Louisiana, LA</option>
+              <option value="ME">Maine, ME</option>
+              <option value="">Maryland, MD</option>
+              <option value="MA">Massachusetts, MA</option>
+              <option value="MI">Michigan, MI</option>
+              <option value="">Minnesota, MN</option>
+              <option value="">Mississippi, MS</option>
+              <option value="">Missouri, MO</option>
+              <option value="">Montana, MT</option>
+              <option value="">Nebraska, NE</option>
+              <option value="">Nevada, NV</option>
+              <option value="">New Hampshire, NH</option>
+              <option value="NJ">New Jersey, NJ</option>
+              <option value="">New Mexico, NM</option>
+              <option value="NY">New York, NY</option>
+              <option value="NC">North Carolina, NC</option>
+              <option value="">North Dakota, ND</option>
+              <option value="OH">Ohio, OH</option>
+              <option value="">Oklahoma, OK</option>
+              <option value="">Oregon, OR</option>
+              <option value="PA">Pennsylvania, PA</option>
+              <option value="">Rhode Island, RI</option>
+              <option value="">Tennessee, TN</option>
+              <option value="">Texas, TX</option>
+              <option value="UT">Utah, UT</option>
+              <option value="">Vermont, VT</option>
+              <option value="VA">Virginia, VA</option>
+              <option value="">Washington, WA</option>
+              <option value="WV">West Virginia, WV</option>
+              <option value="WI">Wisconsin, WI</option>
+              <option value="">Wyoming, WY</option>
+            </select>
+          </label>
+        </header>
+
+        <footer>
+          <button class="verificarState">verificar</button>
+        </footer>
+      </div>
+      <!-- Card 2 -->
+
+      <!-- Card 3 -->
+      <div class="answer d-none" id="answer3">
+        <header>
+          <h2>
+            Please provide an honest answer about your credit score, it's
+            important
+          </h2>
+        </header>
+
+        <div class="center">
+          <form class="form">
+            <p>What's your FICO score?</p>
+
+            <label class="d-block">
+              <input
+                type="radio"
+                class="fico"
+                name="fico"
+                value="660+"
+                checked
+              />
+              660+
+            </label>
+
+            <label>
+              <input type="radio" class="fico" name="fico" value="660-" />
+              660-
+            </label>
+          </form>
+        </div>
+
+        <footer>
+          <button class="btnScore">Verificar</button>
+        </footer>
+      </div>
+      <!-- Card 3 -->
+
+      <!-- Card 4 -->
+      <div class="answer d-none" id="answer4">
+        <header>
+          <h2>Card 4</h2>
+        </header>
+      </div>
+      <!-- Card 4 -->
+
+      <!-- error -->
+      <div class="answer d-none" id="error">
+        <p></p>
+      </div>
+      <!-- error -->
+    </main>
+
+    <script>
+      /* Storing user's device details in a variable*/
+      let details = navigator.userAgent;
+
+      /* Creating a regular expression 
+        containing some mobile devices keywords 
+        to search it in details string*/
+      let regexp = /android|iphone|kindle|ipad/i;
+
+      /* Using test() method to search regexp in details
+        it returns boolean value*/
+      let isMobileDevice = regexp.test(details);
+
+      if (isMobileDevice) {
+        console.log('You are using a Mobile Device');
+      } else {
+        console.log('You are using Desktop');
+      }
+    </script>
+  </body>
+</html>
