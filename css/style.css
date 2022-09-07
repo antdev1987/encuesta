@@ -34,6 +34,10 @@ body {
 }
 /* utilities */
 
+.parrafo {
+  font-size: 1.5rem;
+}
+
 .container {
   max-width: 35rem;
 
