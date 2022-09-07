@@ -19,6 +19,21 @@ body {
   background: #eee;
 }
 
+/* utilities */
+.pY-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.pT-3 {
+  padding-top: 3rem;
+}
+
+.fs-small {
+  font-size: 1.9rem;
+}
+/* utilities */
+
 .container {
   max-width: 35rem;
 
@@ -58,12 +73,11 @@ body {
   box-shadow: 0 0 0.5rem rgb(146, 146, 146);
   padding: 2rem 2rem;
 
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 
   text-align: center;
 
   width: 35rem;
-
 }
 
 .answer select {

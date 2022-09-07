@@ -4,6 +4,8 @@ let answerNumber;
 
 const errorBox = document.querySelector('#error');
 
+const close = document.querySelector("#close")
+
 const button = document.querySelectorAll('.button');
 
 // Score Fico
@@ -50,6 +52,10 @@ btnScore.addEventListener('click', () => {
 
   value === '660+' ? nextAnswer() : error();
 });
+
+close.addEventListener("click", () => {
+  window.close()
+})
 
 function nextAnswer() {
   noneAnswer();

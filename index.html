@@ -33,11 +33,13 @@
           </h2>
         </header>
 
-        <div class="center">
+        <div class="pY-3">
           <p>
             Please answer a few simple questions to check eligibility. It will
             take about 2 minutes of your time at max.
           </p>
+
+          <h2 class="fs-small pT-3">Do you have active credit cards?</h2>
         </div>
 
         <footer>
@@ -108,7 +110,7 @@
         </header>
 
         <footer>
-          <button class="verificarState">verificar</button>
+          <button class="verificarState">Next</button>
         </footer>
       </div>
       <!-- Card 2 -->
@@ -139,13 +141,13 @@
 
             <label>
               <input type="radio" class="fico" name="fico" value="660-" />
-              660-
+              bellow 660
             </label>
           </form>
         </div>
 
         <footer>
-          <button class="btnScore">Verificar</button>
+          <button class="btnScore">Next</button>
         </footer>
       </div>
       <!-- Card 3 -->
@@ -161,6 +163,10 @@
       <!-- error -->
       <div class="answer d-none" id="error">
         <p></p>
+
+        <footer class="pT-3">
+          <button id="close">Close</button>
+        </footer>
       </div>
       <!-- error -->
     </main>
