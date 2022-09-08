@@ -19,6 +19,10 @@ body {
   background: #eee;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 /* utilities */
 .pY-3 {
   padding-top: 3rem;
@@ -139,4 +143,8 @@ button:hover {
 /* animations */
 .animate__animated {
   animation-fill-mode: backwards;
+}
+
+.appstore-image img {
+  width: 100%;
 }

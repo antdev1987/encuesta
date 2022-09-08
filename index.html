@@ -12,13 +12,41 @@
     />
 
     <!-- Css -->
+    <link rel="stylesheet" href="css/prism.css" />
+    <link rel="stylesheet" href="css/prism-line-numbers.css" />
+    <link rel="stylesheet" href="css/prism-live.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- Css -->
 
     <!-- script -->
+    <script src="scripts/prism.js" defer></script>
+    <script src="scripts/prism-line-numbers.js" defer></script>
+    <script src="scripts/prism-live.js" defer></script>
+    <script
+      type="text/javascript"
+      src="scripts/onelink-smart-script-latest.js"
+      defer
+    ></script>
+
+    <script src="javascript/qr-code.js" defer></script>
     <script src="javascript/script.js" defer></script>
     <!-- script -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-33607448-26"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-33607448-26');
+    </script>
 
     <title>Document</title>
   </head>
@@ -155,8 +183,34 @@
       <!-- Card 4 -->
       <div class="answer d-none" id="answer4">
         <header>
-          <h2>Card 4</h2>
+          <h2>The QR-Code of the application</h2>
+          
+          <div class="url-container pT-3">
+            <div class="output_url-container">
+              <div id="my_qr_code_div_id"></div>
+            </div>
+          </div>
+
+          
         </header>
+
+        <footer class="stores-wrapper pT-3">
+          <a
+            id="ios_link"
+            href="https://apps.apple.com/us/app/my-device-id-by-appsflyer/id1192323960"
+            class="appstore-image"
+          >
+            <img src="images/app_store.png" alt="app store link" />
+          </a>
+
+          <a
+            id="andrd_link"
+            class="appstore-image"
+            href="https://play.google.com/store/apps/details?id=com.appsflyer.android.deviceid"
+          >
+            <img src="images/play_store.png" alt="play store link" />
+          </a>
+        </footer>
       </div>
       <!-- Card 4 -->
 
