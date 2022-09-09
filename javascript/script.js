@@ -54,7 +54,8 @@ btnScore.addEventListener('click', () => {
 });
 
 close.addEventListener('click', () => {
-  window.close();
+  // Here you have to change the url
+  window.open('https://www.google.com/', '_self');
 });
 
 function nextAnswer() {
